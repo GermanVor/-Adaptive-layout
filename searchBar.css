@@ -1,0 +1,110 @@
+#SearchBar {
+  position: relative;
+  width: 100%;
+  min-height: 80px;
+  left: 0px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 5000;
+}
+#SearchBar.Fix {
+  position: fixed;
+  top: 0;
+}
+
+#SearchBar .Wrap {
+  display: block;
+  width: 100%;
+  background: white;
+}
+#SearchBar .WrapContainer {
+  width: 72%;
+  margin-left: 14%;
+  margin-right: 14%;
+  min-height: 80px;
+  left: 0px;
+}
+#SearchBar .Group {
+  position: relative;
+  margin: 16px 5% 0 0;
+  float: left;
+  width: 35%;
+  height: 43px;
+}
+#SearchBar .Group input {
+  position: absolute;
+  outline: none;
+  width: 100%;
+  border: none;
+  bottom: 0;
+  transition: all 0.3s ease-out;
+  border-bottom: 1px solid #E5E5E5;
+  margin-top: 19px;
+  padding: 0 0 7px 0;
+}
+#SearchBar .Group input:focus {
+  border-bottom: 1px solid #5DA9E0;
+}
+#SearchBar .Group input:focus::placeholder {
+  opacity: 0;
+}
+.Group input + label{
+  opacity: 0;
+  width: 37px;
+  height: 14px;
+  left: 200px;
+  top: 16px;
+}
+.Group input:focus + label  {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  width: 37px;
+  height: 14px;
+  left: 200px;
+  top: 16px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+
+  color: #888888;
+}
+
+#SearchBar .GroupButton {
+  float: left;
+  width: 19%;
+  height: 32px;
+  margin: 27px 0 21px 0;
+}
+#SearchBar .GroupButton input {
+  width: 100%;
+  height: 32px;
+  background: #E5E5E5;
+  border-radius: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline:none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+}
+#SearchBar .GroupButton input[type="button"]:not(.ban) {
+  background: #5DA9E0;
+}
+#SearchBar .GroupButton input[type="button"].ban{
+  background: #E5E5E5;
+}
+
+#SearchBar .GroupButton input[type="button"]:not(.ban):hover {
+  background: rgb(121, 190, 240);
+}
+#SearchBar .GroupButton input[type="button"]:not(.ban):active {
+  background: rgb(50, 128, 184);
+}

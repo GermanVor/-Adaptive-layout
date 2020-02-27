@@ -1,0 +1,62 @@
+#Footer {
+  position: absolute;
+  min-height: 177px;
+  /* height: 30%; */
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+#Footer .FootMenu {
+  float: left;
+  position: relative;
+  /* width: 300px; */
+  width: 30%;
+  height: 100%;
+  margin-top: 20px;  
+  margin-right: 5%;
+}
+#Footer .FootMenu:last-child {
+  margin-right: 0;
+}
+.FootContainer {
+  position: relative;
+  width: 72%;
+  min-height: 177px;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+
+#Footer .FootMenu div:first-child {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+#Footer .FootMenu div {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  left: 0px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.FootContainer .Logo {
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+}

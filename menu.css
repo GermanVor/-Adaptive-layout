@@ -1,0 +1,71 @@
+#Menu {
+  /* position: absolute; */
+  width: 100%;
+  min-height: 72px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  margin-bottom: 1px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+ .MenuContainer {
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 72%;
+  margin-left: 14%;
+  margin-right: 14%;
+  
+}
+.logo {
+  float: left;
+  margin: 10px 0 10px 0;
+
+  width: 52px;
+  height: 52px;
+  z-index: 100;
+  background:url(https://image.flaticon.com/icons/svg/145/145813.svg);
+}
+.before {
+  float: left;
+  height: 100%;
+  vertical-align: middle;
+  width: auto;
+}
+ .MenuContainer .Item {
+  width: auto;
+  margin-right: 3%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.MenuContainer div.last{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center
+}
+
+.MenuContainer div.last .Item{
+  width: auto;
+  margin-right: 0;
+  display: inline-block;
+  vertical-align: middle;
+ 
+}
+
+ div.Item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.MenuContainer .Wr {
+  height: 72px;
+  width: auto;
+}

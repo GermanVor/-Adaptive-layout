@@ -1,0 +1,83 @@
+#Content {
+  width: 71%;
+  margin: auto;
+  height: auto;
+  padding-bottom: 177px;
+}
+#Content .title {
+  margin: 20px auto 20px auto;
+  width: auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #5DA9E0;
+}
+.grid {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+}
+.grid div {
+  min-height: 130px;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+.grid div:nth-child(3n) {
+  margin-right: 0;
+}
+
+.grid div h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 10px 0;
+  min-height: 16px;
+  max-height: 32px;
+  color: #000000;
+ 
+}
+.grid div p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+  color: #000000;
+  
+}
+
+/* mixin for multiline */
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 2.4em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+.block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.block-with-text:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+    
